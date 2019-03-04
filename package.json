@@ -11,7 +11,8 @@
   "scripts": {
     "start": "parcel src/index.html --public-url '/'",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "linux:fix-watch-issue": "sudo sysctl fs.inotify.max_user_watches=524288"
   },
   "devDependencies": {
     "parcel-bundler": "^1.11.0",
