@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import theme from '../theme'
 
 const Card = styled.div `
   box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 5px 0px;
-  margin-bottom: 50px;
+  margin-bottom: ${theme.margins.cardBottomMargin};
   background: rgb(255, 255, 255);
   border-radius: ${(props) => props.round ? props.round : '5px'};
   padding: 10px 30px;
