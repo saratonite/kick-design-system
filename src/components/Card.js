@@ -8,6 +8,7 @@ const Card = styled.div `
   border-radius: ${(props) => props.round ? props.round : '5px'};
   padding: 10px 30px;
   transition: all 0.2s ease-in;
+  display: ${(props) => props.inline ? 'inline-block' : 'block'};
   ${(props) => props.dark && `
     background-color: #3e3e3e;
     color: #f3f3f3;

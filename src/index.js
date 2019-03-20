@@ -34,6 +34,9 @@ const App = () => (
         molestias perferendis obcaecati beatae, accusantium autem a earum quis!
         Quod voluptas sapiente ad minus ipsam dolorem rem eius provident ipsum.{" "}
       </p>{" "}
+      <Card inline>
+        <h2>Inline Card</h2>
+      </Card>
     </Card>
 
     <Card>
