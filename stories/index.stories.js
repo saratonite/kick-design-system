@@ -7,6 +7,7 @@ import { linkTo } from "@storybook/addon-links";
 import { Welcome } from "@storybook/react/demo";
 import Button from "../src/components/Button";
 import Card from "../src/components/Card";
+import GradientText from "../src/components/GradientText";
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
 ));
@@ -39,4 +40,13 @@ storiesOf("Card")
     <Card dark>
       <h2> Dark card </h2>{" "}
     </Card>
+  ));
+
+// GradientText
+storiesOf("GradientText")
+  .add("GradientText ", () => <GradientText>Hello World</GradientText>)
+  .add("Heading ", () => (
+    <h1>
+      <GradientText>Hello Universe</GradientText>
+    </h1>
   ));
