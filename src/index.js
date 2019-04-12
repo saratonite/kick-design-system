@@ -13,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
 import Button from "./components/Button";
 import Card from "./components/Card";
 import GradientText from "./components/GradientText";
+import Link from "./components/Link";
 const App = () => (
   <div>
     <GlobalStyles />
@@ -24,7 +25,13 @@ const App = () => (
       <Button primary onClick={() => alert("Hello")}>
         Button Primary😋{" "}
       </Button>{" "}
-      <Button onClick={() => alert("Hello")}> Hello World😁 </Button>{" "}
+      <Button onClick={() => alert("Hello")}> Hello World😁 </Button>
+      <Button onClick={() => alert("Hello")} block>
+        Button Block
+      </Button>
+      <Button onClick={() => alert("Hello")} fill>
+        Filled button
+      </Button>
     </Card>
 
     <Card>
@@ -46,6 +53,13 @@ const App = () => (
       <h4>
         <GradientText>Colorfull Heading </GradientText>
       </h4>
+    </Card>
+    <Card>
+      <h3>Link</h3>
+      <Link href="http://sarath.tk">Hello</Link>
+      <Link href="http://sarath.tk" target="_blank">
+        <GradientText>Colorfull link</GradientText>
+      </Link>
     </Card>
   </div>
 );
