@@ -10,6 +10,11 @@ export default styled.span`
 
   transition: all 0.3s ease-in;
 
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  // Hover 
   :hover {
     background: -webkit-linear-gradient(
       40deg,
@@ -22,7 +27,5 @@ export default styled.span`
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  
 `;

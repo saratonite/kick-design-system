@@ -22,11 +22,10 @@ const Button = styled.button`
   color: back;
   :hover {
     background: #ddd;
-    transform: translateY(-1px);
   }
 
   ${props =>
-    props.fill &&
+    props.fillColor &&
     css`
       background: ${theme.colors.secondary};
       color: #fff;
