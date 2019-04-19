@@ -20,6 +20,7 @@ import Card from "./components/Card";
 import GradientText from "./components/GradientText";
 import Link from "./components/Link";
 import Heading from "./components/Heading"
+import Image from './components/Image'
 const App = () => (
   <div>
     <GlobalStyles />
@@ -27,7 +28,8 @@ const App = () => (
       <GradientText>Kick Design</GradientText>
     </Heading>
     <Card>
-      <h3>Buttons</h3>
+      <Heading as="h3">Buttons</Heading>
+
       <Button primary onClick={() => alert("Hello")}>
         Button Primary😋{" "}
       </Button>{" "}
@@ -41,7 +43,8 @@ const App = () => (
     </Card>
 
     <Card>
-      <h3>Card</h3>
+    <Heading as="h3">Card</Heading>
+      
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit.Soluta porro
         molestias perferendis obcaecati beatae, accusantium autem a earum quis!
@@ -49,11 +52,16 @@ const App = () => (
       </p>{" "}
       <Card inline>
         <h2>Inline Card</h2>
+        <div>
+        <Button onClick={() => alert("Hello")}> Hello World😁 </Button>
+        <Button onClick={() => alert("Hello")} fillColor> Hello World😁 </Button>
+        </div>
       </Card>
     </Card>
 
     <Card>
-      <h3>Gradient Text</h3>
+      <Heading as="h3">Gradient Text</Heading>
+
 
       <GradientText>Colorfull</GradientText>
       <h4>
@@ -64,7 +72,8 @@ const App = () => (
 
     {/* Header */}
     <Card>
-      <h3>Header</h3>
+      <Heading as="h3">Heading</Heading>
+
       <Heading>H1</Heading>
       <Heading as="h2">H2</Heading>
       <Heading as="h3">H3</Heading>
@@ -74,11 +83,22 @@ const App = () => (
     </Card>
 
     <Card>
-      <h3>Link</h3>
+      <Heading as="h3">Links</Heading>
+
       <Link href="http://sarath.tk">Hello</Link>
       <Link href="http://sarath.tk" target="_blank">
         <GradientText>Colorfull link</GradientText>
       </Link>
+    </Card>
+    <Card>
+    <Heading as="h3">Images</Heading>
+
+      <Image triangle width="300px" height="300px" src="https://images.unsplash.com/photo-1547974497-bb2a93b333ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"/>
+      <Image circle width="300px" height="300px" src="https://images.unsplash.com/photo-1550621310-5b0598adcac8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"/>
+      <Image width="300px" height="300px" src="https://images.unsplash.com/photo-1551294444-20efb855d547?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"/>
+      <Card inline>
+      <Image width="300px" height="300px" src="https://images.unsplash.com/photo-1551294444-20efb855d547?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"/>
+      </Card>
     </Card>
   </div>
 );

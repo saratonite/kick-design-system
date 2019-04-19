@@ -6,6 +6,7 @@ const Button = styled.button`
   cursor: pointer;
   border-radius: 5px;
   background: white;
+  position: relative;
   ${props =>
     props.primary &&
     css`

@@ -6,7 +6,8 @@ export default {
     success: "#44dd55",
     warning: "#ddcc22",
     error: "#cc5533",
-    info: "#4499cc"
+    info: "#4499cc",
+    indigo:"#453886"
   },
   margins: {
     cardBottomMargin: "50px"
