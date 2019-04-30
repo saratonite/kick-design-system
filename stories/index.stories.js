@@ -6,8 +6,17 @@ import { linkTo } from "@storybook/addon-links";
 
 import { Welcome } from "@storybook/react/demo";
 
+import Card from "../src/components/Card";
+import Heading from "../src/components/Heading";
+import GradientText from "../src/components/GradientText";
+
 storiesOf("Welcome", module).add("to Storybook", () => (
-  <Welcome showApp={linkTo("Button")} />
+  <div>
+    <Heading>
+      <GradientText>Kick Design</GradientText>
+    </Heading>
+    <p>Welcome to kick design</p>
+  </div>
 ));
 
 function loadStories() {
@@ -15,6 +24,7 @@ function loadStories() {
   require("../src/components/Button.story");
   require("../src/components/Card.story");
   require("../src/components/Gradient.story");
+  require("../src/components/Heading.story");
 }
 
 configure(loadStories, module);
